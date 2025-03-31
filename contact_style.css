@@ -1,0 +1,109 @@
+ body {
+    font-family:'Times New Roman', Times, serif;
+    background-image: linear-gradient(to right,black, purple);
+    color: Black;
+    margin: 0;
+}
+header {
+    background-image: url(background_cliff.png);
+    background-size: cover;
+    background-position: center;
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+
+.nav {
+    background-color: black;
+    padding: 10px;
+    position: relative;
+}
+.navmenu {
+    display: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    padding: 5px;
+}
+.nav ul {
+    list-style-type: none;
+    margin: -10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.nav li {
+    margin: 0 30px;
+}
+.nav a {
+    font-size: 20px;
+    text-decoration: none;
+    display: block;
+    color: white;
+    padding: 10px;
+}
+.nav a:hover {
+    background-color: darkgray;
+    border-radius: 4px;
+}
+
+@media (max-width: 800px) {
+    .navmenu {
+        display: block;
+    }
+    .nav ul {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+    .nav ul.show-nav {
+        display: flex;
+    }
+}
+
+main {
+    padding: 30px;
+    text-align: center;
+}
+
+section {
+    background-color: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.contact_container {
+  display: flex;
+  justify-content: center;
+}
+
+#contact_form {
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+  min-height: 100px;
+  resize: vertical;
+}
+
+.ratings {
+  align-items: center;
+}
+.star{
+    font-size: 40px;
+    color: black;
+    cursor: pointer;
+}
+
+.highlight-star{
+    color: gold
+}

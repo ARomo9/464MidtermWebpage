@@ -1,0 +1,86 @@
+body {
+    font-family:'Times New Roman', Times, serif;
+    background-image: linear-gradient(to right,black, purple);
+    color: Black;
+    margin: 0;
+}
+header {
+    background-image: url(background_cliff.png);
+    background-size: cover;
+    background-position: center;
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+
+.nav {
+    background-color: black;
+    padding: 10px;
+    position: relative;
+}
+.navmenu {
+    display: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    padding: 5px;
+}
+.nav ul {
+    list-style-type: none;
+    margin: -10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.nav li {
+    margin: 0 30px;
+}
+.nav a {
+    font-size: 20px;
+    text-decoration: none;
+    display: block;
+    color: white;
+    padding: 10px;
+}
+.nav a:hover {
+    background-color: darkgray;
+}
+
+@media (max-width: 800px) {
+    .navmenu {
+        display: block;
+    }
+    .nav ul {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+    .nav ul.show-nav {
+        display: flex;
+    }
+}
+
+main {
+    padding: 30px;
+}
+
+section {
+    background-color: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+.gis-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+    justify-content: center;
+}
+.gis-gallery img {
+    width: 200px;
+    height: auto;
+}
+

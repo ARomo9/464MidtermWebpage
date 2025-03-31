@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="contact_style.css">
+        <title>Webpage - Contact Antonio's Portfolio</title>
+    </head>
+    <body>
+        <header>
+            <h1>Antonio's Portfolio & Autobiography</h1>
+        </header>
+
+        <nav class="nav">
+            <div class="navmenu" onclick="toggleMenu()">☰ Menu</div>
+            <ul id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="reports.html">Stock Reports</a></li>
+                <li><a href="links.html">Social Links</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>      
+
+        <main>
+            <section id="contact">
+                <h2>Contact Me</h2>
+                <form id="contact_form" action="" method="post">
+                    <label for="fname">First Name:</label><br>
+                    <input type="text" id="fname" name="fname"><br>
+                    <label for="lname">Last Name:</label><br>
+                    <input type="text" id="lname" name="lname"><br>
+                    <label for="email">Email:</label><br>
+                    <input type="text" id="email" name="email"><br><br>
+
+                    <label for="comments">Comments</label><br>
+                    <textarea id="contact_comments" name="contact_comments"></textarea><br>
+
+                    <div class="ratings">
+                        <label for="rating">Rate Us:</label><br>
+                        <span onclick="rate(1)" class="star">&#9733;</span>
+                        <span onclick="rate(2)" class="star">&#9733;</span>
+                        <span onclick="rate(3)" class="star">&#9733;</span>
+                        <span onclick="rate(4)" class="star">&#9733;</span>
+                        <span onclick="rate(5)" class="star">&#9733;</span>
+                    </div><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </section>
+        </main>
+
+        <script src="contact_script.js"></script>
+    </body>
+</html>

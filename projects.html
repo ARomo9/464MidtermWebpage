@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Webpage - Projects Antonio's Portfolio</title>
+        <link rel="stylesheet" href="projects_style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Antonio's Portfolio & Autobiography</h1>
+        </header>
+
+        <nav class="nav">
+            <div class="navmenu" onclick="toggleMenu()">☰ Menu</div>
+            <ul id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="reports.html">Stock Reports</a></li>
+                <li><a href="links.html">Social Links</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>       
+        <main>
+            <section id="GIS" class="project">
+                <h2>GIS Database Map Project</h2>
+                <p>
+                    This is GIS representation of Europe during the rulings of the Roman empire. Focusing on the territory of Julius and Augustus.<br>
+                    The purpose of this project was to showcase the expansion of the Roman empire within the 100 year range.<br>
+                    This is found by utlizing MATLAB to trace each map and import those coordinates into a text file and appropriately parsing each map.<br>
+                </p>
+                <div class="gis-gallery">
+                    <div class="map1">
+                        <h3>Europe</h3>
+                        <img src="basemap.png" alt="Map 1">
+                    </div>
+                    <div class="map2">
+                        <h3>Julius Caesar</h3>
+                        <img src="julmap.png" alt="Map 1">
+                    </div>
+                    <div class="map3">
+                        <h3>Augustus Caesar</h3>
+                        <img src="augmap.png" alt="Map 3">
+                    </div>
+                    <div class="map4">
+                        <h3>Overlapped</h3>
+                        <img src="overlapmap.png" alt="Map 4">
+                    </div>
+                </div>
+            </section>
+
+            <section id="Project 2">
+                <h2>Project 2</h2><br>
+                <p>MORE COMING IN SOON!</p>
+            </section>
+        </main>
+
+        <script src="projects_script.js"></script>
+    </body>
+</html>
